@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "Neon80";
+    src: url(Neon.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FDFCF6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 150px;
+    width: 100%;
+}
+label.logo img{
+    justify-content: center;
+    width: 200px;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0.5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    font-family: Neon80;
+    text-transform: uppercase;
+    padding: 20px;
+}
+a.active{
+    color: #d79943;
+    transition: .5s;
+    text-decoration: underline;
+}
+a.hover{
+    color: aliceblue;
+}
+.checkbtn{
+    color: black;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 90px;
+        background: rgb(215, 234, 243);
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        padding-top: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a.hover{
+        color: aliceblue;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+h1{
+    color: #d79943;
+    font-family: neon80;
+    font-size: 75px;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 100px;
+}
+h2{
+    color: #ebc695;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+/*Project Thumbnails*/
+
+.projects_row1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.projects_row2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.projects_row1 img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    margin: 10px;
+}
+.projects_row2 img{
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 10px;
+}
+.content{
+    display: none;
+    position: relative;
+    top: -200px;
+    color: #1a284b;
+    font-family: neon80;
+    font-size: 35px;
+    text-align: center;
+}
+.chess:hover .content{
+    display: block;
+}
+.chess:hover img{
+    opacity: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.trendy:hover .content{
+    display: block;
+}
+.trendy:hover img{
+    opacity: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.twice:hover .content{
+    display: block;
+}
+.twice:hover img{
+    opacity: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.wobbly:hover .content{
+    display: block;
+}
+.wobbly:hover img{
+    opacity: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.fame:hover .content{
+    display: block;
+}
+.fame:hover img{
+    opacity: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.mits:hover .content{
+    display: block;
+}
+.mits:hover img{
+    opacity: 20%;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.project_col{
+    padding-top: 40px;
+}
+#project_image{
+    padding: 10px;
+    text-align: center;
+}
+#btn{
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: rgb(215, 234, 243) solid 3px;
+    font-family: neon80;
+}
+button:hover{
+    background-color: rgb(215, 234, 243);
+    cursor: pointer;
+}
+.footer_nav{
+    padding: 50px;
+    font-family: neon80;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#previous{
+    float:left;
+    cursor: pointer;  
+    color: #1a284b 
+}
+#next{
+    float: right;
+    cursor: pointer;
+    color: #1a284b
+}
+/*Supposed to be a fade in on scroll for images (not working)
+.hidden{
+    opacity: 0;
+    transition: 0.5s;
+}
+.show{
+    opacity: 1;
+}*/
