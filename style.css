@@ -208,17 +208,19 @@ h2{
     text-align: center;
 }
 #btn{
+    margin-top: 30px;
     text-align: center;
 }
-button{
+#button{
     background-color: transparent;
     padding: 10px 20px 10px 20px;
     margin-top: 20px;
     border-radius: 30px;
+    color: #1a284b;
     border: rgb(215, 234, 243) solid 3px;
     font-family: neon80;
 }
-button:hover{
+#button:hover{
     background-color: rgb(215, 234, 243);
     cursor: pointer;
 }
@@ -237,6 +239,11 @@ button:hover{
     float: right;
     cursor: pointer;
     color: #1a284b
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 /*Supposed to be a fade in on scroll for images (not working)
 .hidden{
