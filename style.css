@@ -253,3 +253,100 @@ h2{
 .show{
     opacity: 1;
 }*/
+
+/* CONTINUOUS LOOP  */
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #1a284b;
+  }
+  
+  .title-word-3 {
+    --color-1: #217d44;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #ebc695;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    justify-content: left;
+    place-items: center;  
+    text-align: left;
+    height: 50vh;
+    float: right;
+  }
+  
+  .title {
+    font-family: neon80;
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-right: 200px;
+    margin-top: 50px;
+    
+  }
+  .title2 {
+    font-family: neon80;
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+  }
+  .title p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    text-transform: none;
+    margin-left: 45px;
+  }
+  .title .title-word-2, 
+  .title-word-3, .title-word-4{
+    font-size: 30px;
+  }
+  
+  /* ABOUT */
+  .about_container{
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #1a284b;
+  }
+  .about img{
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 140px;
+    
+  }
