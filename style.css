@@ -100,6 +100,9 @@ h2{
     border-radius: 3px;
     margin: 10px;
 }
+.motherland{
+    background-color: transparent;
+}
 .projects_row2 img{
     width: 300px;
     height: 300px;
@@ -107,6 +110,7 @@ h2{
     border-radius: 3px;
     margin: 10px;
 }
+
 .content{
     display: none;
     position: relative;
@@ -140,10 +144,10 @@ h2{
     transition: 0.5s;
     cursor: pointer;
 } 
-.wobbly:hover .content{
+.motherland:hover .content{
     display: block;
 }
-.wobbly:hover img{
+.motherland:hover img{
     opacity: 20%;
     transition: 0.5s;
     cursor: pointer;
