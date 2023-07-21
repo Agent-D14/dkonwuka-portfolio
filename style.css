@@ -12,6 +12,7 @@
 body{
     background-color: #FDFCF6;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 nav{
     height: 150px;
@@ -220,9 +221,28 @@ h2{
     border: rgb(215, 234, 243) solid 3px;
     font-family: neon80;
 }
+#button1{
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #1a284b;
+    border: #ebc695 solid 3px;
+    font-family: neon80;
+}
 #button:hover{
     background-color: rgb(215, 234, 243);
     cursor: pointer;
+}
+#button1:hover{
+    background-color: #ebc695;
+    cursor: pointer;
+}
+#button.active1{
+    background-color: rgb(215, 234, 243);
+}
+#button1.active1{
+    background-color: #ebc695;
 }
 .footer_nav{
     padding: 50px;
@@ -269,11 +289,11 @@ h2{
   .title-word-2 {
     --color-1: #DBAD4A;
     --color-2: #ACCFCB;
-    --color-3: #1a284b;
+    --color-3: #ebc695;
   }
   
   .title-word-3 {
-    --color-1: #217d44;
+    --color-1: #DF8453;
     --color-2: #E4A9A8;
     --color-3: #ACCFCB;
   }
@@ -303,6 +323,7 @@ h2{
     text-align: left;
     height: 50vh;
     float: right;
+    margin-top: 120px;
   }
   
   .title {
@@ -312,28 +333,28 @@ h2{
     font-size: 30px;
     text-transform: uppercase;
     margin-right: 200px;
-    margin-top: 50px;
+    
     
   }
   .title2 {
     font-family: neon80;
     color: white;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
     
   }
   .title p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     text-align: left;
     text-transform: none;
     margin-left: 45px;
   }
   .title .title-word-2, 
   .title-word-3, .title-word-4{
-    font-size: 30px;
+    font-size: 40px;
   }
   
   /* ABOUT */
@@ -348,5 +369,83 @@ h2{
     text-align: center;
     margin-left: 200px;
     margin-top: 140px;
+  }
+  .contact{
+    padding-top: 30px;
+    padding-bottom: 100px;
     
   }
+  .contact h1{
+    font-size: 25px;
+    padding: 0px;
+    margin-left: 50px;
+    text-align: left;
+    color: #1a284b;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #personal{
+    margin-top: 80px;
+    transition: 0.5s;
+  }
+  .contact_me h2{
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  /*CONTACT BOX*/
+
+  .contact_container {
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(215, 234, 243);
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #1a284b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-family: neon80;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: transparent;
+    border: #1a284b solid 1px;
+    color: #1a284b;
+  }
+
+  .popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #1a284b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+  }
+  .open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
